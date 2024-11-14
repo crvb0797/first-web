@@ -1,20 +1,6 @@
 ---
-const pageTitle = "Mi blog de Astro aprendizaje";
+import BaseLayout from "../layouts/baseLayout.astro"
 ---
-
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Villatoro DEV | {pageTitle}</title>
-  </head>
-  <body>
-    <h1>Mi primer Blog con Astro 💻</h1>
-	<ul>
-		<li><a href="/">Inicio</a></li>
-		<li><a href="/about">Sobre mi</a></li>
-		<li><a href="/blog">Blog</a></li>
-	</ul>
-  </body>
-</html>
+<BaseLayout title="Mi primer blog con Astro">
+  <h1 class="text-xl font-bold text-center text-white border-b-2 border-white pb-2">Mi primer Blog con Astro 💻</h1>
+</BaseLayout>

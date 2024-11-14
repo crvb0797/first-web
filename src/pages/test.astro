@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/baseLayout.astro"
+const items = ["item-1", "item-2", "item-3"]
+---
+
+<BaseLayout>
+    <h1 class="text-xl font-bold text-center text-white border-b-2 border-white pb-2">Hola mundo soy una página de prueba</h1>
+    <ul class="py-10 flex justify-center gap-3">
+        {
+            items.map((item) => (
+                <li class="text-white">{item}</li>
+            ))
+        }
+    </ul>
+</BaseLayout>
